@@ -1,0 +1,152 @@
+* {
+    margin: 0px;
+    padding-left: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('https://i.imgur.com/LwfBEKa.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    font-family: 'Oswald', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.content {
+    margin-left: 10px;
+    margin-top: 40px;
+    color: #ffffff;
+}
+
+.navlinks1 {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    min-height: 6vh;
+    margin-top: 50px;
+    margin-left: 80px;
+    font-weight: bold;
+    font-size: 14px;
+
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    width: 8%;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    list-style: none;
+    color: #ffffff;
+}
+
+.navbugger {
+    display: none;
+
+}
+
+.navbugger div {
+    width: 25px;
+    height: 3px;
+    margin: 3px 10px;
+    background-color: white;
+}
+
+
+.navlinks2 {
+    display: none;
+
+}
+
+
+@media only screen and (max-width: 768px) {
+    .navlinks2 {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        min-height: 6vh;
+        margin-top: 50px;
+        margin-left: 80px;
+        font-weight: bold;
+        font-size: 18px;
+
+    }
+
+    .content {
+        font-size: 18px;
+        font-family: 'Poppins', sans-serif;
+        width: 180px;
+
+    }
+
+    .navlinks1 {
+        display: none;
+
+    }
+
+    .navbugger {
+        display: none;
+
+    }
+}
+
+@media only screen and (max-width: 360px) {
+
+
+    .navlinks1 {
+
+        display: none;
+        flex-direction: column;
+       
+      
+    }
+    .navlinks1 a{
+
+       
+        margin: 4px;
+    }
+    .navbugger {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    
+    } 
+    
+     .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    
+    }
+     
+    .navlinks1.active {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .navlinks2 {
+        display: none;
+    
+    }
+    
+    .content {
+    
+        font-size: 12px;
+        font-family: 'Poppins', sans-serif;
+        width: 150px;
+    
+    
+    }
+}
+
